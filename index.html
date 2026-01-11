@@ -1,218 +1,111 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Showroom Nội Thất Gỗ Nhựa Ladiki</title>
+  <meta charset="UTF-8" />
+  <title>Trần Nhựa Nhà Phố | Gỗ Nhựa Ladiki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Ladiki chuyên thi công trần nhựa nhà phố tại Hà Nội & TP.HCM. Đẹp như gỗ – chống ẩm – bảo hành dài hạn. Gửi ảnh nhà tư vấn miễn phí."/>
+  <meta name="keywords" content="trần nhựa nhà phố, trần nhựa giả gỗ, thi công trần nhựa, ladiki"/>
 
-<style>
-:root{
-  --main:#2e7d32;
-  --dark:#1c1c1c;
-  --light:#f4f4f4;
-}
-*{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
-body{margin:0;background:#fff;color:#333}
-
-/* HEADER */
-header{
-  background:var(--dark);
-  color:#fff;
-  padding:15px 30px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-header h1{font-size:22px}
-header nav a{color:#fff;margin-left:15px;text-decoration:none}
-
-/* HERO */
-.hero{
-  padding:60px 20px;
-  text-align:center;
-  background:#eee;
-}
-.hero h2{font-size:36px}
-.hero p{font-size:18px}
-
-/* SHOWROOM */
-.showroom{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:30px;
-  padding:40px;
-}
-@media(max-width:768px){
-  .showroom{grid-template-columns:1fr}
-}
-
-/* PREVIEW */
-.preview{
-  border:1px solid #ddd;
-  border-radius:10px;
-  overflow:hidden;
-}
-.preview img{
-  width:100%;
-  height:350px;
-  object-fit:cover;
-  transition:.3s;
-}
-
-/* CONTROLS */
-.controls h3{margin-bottom:10px}
-.group{margin-bottom:20px}
-.group button{
-  margin:5px;
-  padding:10px 15px;
-  border:1px solid var(--main);
-  background:#fff;
-  cursor:pointer;
-  border-radius:20px;
-}
-.group button.active,
-.group button:hover{
-  background:var(--main);
-  color:#fff;
-}
-
-/* CTA */
-.cta{
-  text-align:center;
-  margin:40px 0;
-}
-.cta a{
-  display:inline-block;
-  padding:15px 30px;
-  background:var(--main);
-  color:#fff;
-  text-decoration:none;
-  border-radius:30px;
-  font-size:18px;
-}
-
-/* FIXED CTA */
-.fixed{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-.fixed a{
-  padding:12px 18px;
-  border-radius:30px;
-  color:#fff;
-  text-decoration:none;
-  text-align:center;
-}
-.fixed .call{background:#e53935}
-.fixed .zalo{background:#25d366}
-
-/* FOOTER */
-footer{
-  background:var(--dark);
-  color:#fff;
-  text-align:center;
-  padding:20px;
-}
-</style>
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7f7f7;color:#222}
+    header{background:#111;color:#fff;padding:20px}
+    .container{max-width:1100px;margin:auto;padding:20px}
+    h1,h2,h3{margin-top:0}
+    .hero{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+    .hero img{width:100%;border-radius:10px}
+    .btn{display:inline-block;padding:14px 22px;background:#c59d5f;color:#fff;text-decoration:none;border-radius:6px;font-weight:bold}
+    .btn.alt{background:#25d366}
+    .section{background:#fff;margin:20px 0;padding:30px;border-radius:10px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+    .card{border:1px solid #ddd;border-radius:8px;padding:15px}
+    .card img{width:100%;border-radius:6px}
+    footer{background:#111;color:#fff;padding:30px;text-align:center}
+    .fixed-cta{position:fixed;bottom:15px;right:15px;display:flex;flex-direction:column;gap:10px}
+    .fixed-cta a{padding:12px 16px;border-radius:50px;color:#fff;font-weight:bold;text-decoration:none}
+    .call{background:#e74c3c}
+    .zalo{background:#25d366}
+    @media(max-width:768px){
+      .hero{grid-template-columns:1fr}
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <h1>LADIKI SHOWROOM</h1>
-  <nav>
-    <a href="#showroom">Showroom</a>
-    <a href="#contact">Liên hệ</a>
-  </nav>
+  <div class="container">
+    <h1>GỖ NHỰA LADIKI</h1>
+    <p>Chuyên thi công <strong>TRẦN NHỰA NHÀ PHỐ</strong> – Hà Nội & TP.HCM</p>
+  </div>
 </header>
 
-<section class="hero">
-  <h2>Tự chọn vật liệu – Xem ngay không gian nhà bạn</h2>
-  <p>Trải nghiệm như showroom thật</p>
-</section>
+<div class="container hero">
+  <div>
+    <h2>Trần Nhựa Nhà Phố – Đẹp Như Gỗ, Bền 20 Năm</h2>
+    <p>✔ Chống ẩm – Không mối mọt<br>
+       ✔ Thi công 1–2 ngày<br>
+       ✔ Che trần cũ nhanh gọn<br>
+       ✔ Bảo hành rõ ràng</p>
 
-<section class="showroom" id="showroom">
-
-  <!-- PREVIEW -->
-  <div class="preview">
-    <img id="previewImg" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+    <a class="btn" href="tel:0382259567">📞 GỌI NGAY 0382 259 567</a>
+    <a class="btn alt" href="https://zalo.me/0382259567" target="_blank">💬 ZALO TƯ VẤN</a>
   </div>
 
-  <!-- CONTROLS -->
-  <div class="controls">
+  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Trần nhựa nhà phố">
+</div>
 
-    <div class="group">
-      <h3>Chọn khu vực</h3>
-      <button onclick="setArea('tran')" class="active">Trần</button>
-      <button onclick="setArea('op')">Ốp tường</button>
-      <button onclick="setArea('san')">Sàn</button>
+<section class="container section">
+  <h2>🔹 Chọn Loại Trần Nhựa</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab">
+      <h3>Trần nhựa phẳng</h3>
+      <p>Hiện đại – gọn gàng – dễ phối nội thất</p>
     </div>
-
-    <div class="group">
-      <h3>Chọn vật liệu / màu</h3>
-      <button onclick="setMaterial('wood')">Vân gỗ</button>
-      <button onclick="setMaterial('white')">Trắng</button>
-      <button onclick="setMaterial('dark')">Gỗ tối</button>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b">
+      <h3>Trần nhựa giả gỗ</h3>
+      <p>Sang trọng – giống gỗ tự nhiên</p>
     </div>
-
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed">
+      <h3>Trần lam sóng</h3>
+      <p>Trang trí phòng khách – cầu thang</p>
+    </div>
   </div>
-
 </section>
 
-<section class="cta">
-  <a href="#contact">📞 Nhận báo giá theo mẫu đã chọn</a>
+<section class="container section">
+  <h2>🏠 Công Trình Nhà Phố Tiêu Biểu</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1595526114035-45e49f45dba3">
+      <p>Nhà phố Hoàng Mai – Hà Nội</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1582582621959-48d27397dc69">
+      <p>Nhà phố Quận 2 – TP.HCM</p>
+    </div>
+  </div>
 </section>
 
-<section id="contact" style="text-align:center;padding:30px">
-  <h2>Liên hệ Ladiki</h2>
-  <p>
-    📞 0382 259 567<br>
-    📍 268B Yên Duyên – Hoàng Mai – Hà Nội<br>
-    📍 58 Thạnh Mỹ Lợi – Q2 – TP.HCM
-  </p>
+<section class="container section">
+  <h2>📸 Gửi Ảnh Trần Nhà – Nhận Tư Vấn Miễn Phí</h2>
+  <p>Chỉ cần gửi ảnh trần hiện trạng → Ladiki lên phương án & báo giá nhanh</p>
+  <a class="btn alt" href="https://zalo.me/0382259567" target="_blank">GỬI ẢNH QUA ZALO</a>
 </section>
 
 <footer>
-  © 2026 Nội Thất Gỗ Nhựa Ladiki
+  <p>© 2026 Gỗ Nhựa Ladiki</p>
+  <p>Hotline/Zalo: <strong>0382 259 567</strong></p>
+  <p>Phục vụ: Hà Nội & TP.HCM</p>
 </footer>
 
-<div class="fixed">
+<div class="fixed-cta">
   <a class="call" href="tel:0382259567">📞 Gọi</a>
   <a class="zalo" href="https://zalo.me/0382259567" target="_blank">💬 Zalo</a>
 </div>
-
-<script>
-let area='tran'
-function setArea(a){
-  area=a
-  document.querySelectorAll('.group button').forEach(b=>b.classList.remove('active'))
-  event.target.classList.add('active')
-}
-
-function setMaterial(type){
-  let img=''
-  if(area==='tran'){
-    if(type==='wood') img='https://images.unsplash.com/photo-1600585152915-d208bec867a1'
-    if(type==='white') img='https://images.unsplash.com/photo-1582582494700-8b04c1b7f30d'
-    if(type==='dark') img='https://images.unsplash.com/photo-1615874959474-d609969a20ed'
-  }
-  if(area==='op'){
-    if(type==='wood') img='https://images.unsplash.com/photo-1615874959474-d609969a20ed'
-    if(type==='white') img='https://images.unsplash.com/photo-1600585154340-be6161a56a0c'
-    if(type==='dark') img='https://images.unsplash.com/photo-1600585152915-d208bec867a1'
-  }
-  if(area==='san'){
-    if(type==='wood') img='https://images.unsplash.com/photo-1582582494700-8b04c1b7f30d'
-    if(type==='white') img='https://images.unsplash.com/photo-1600585154340-be6161a56a0c'
-    if(type==='dark') img='https://images.unsplash.com/photo-1615874959474-d609969a20ed'
-  }
-  document.getElementById('previewImg').src=img
-}
-</script>
 
 </body>
 </html>
