@@ -3,19 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nội Thất Gỗ Nhựa Ladiki | Trần – Ốp Tường – Sàn</title>
-
-<meta name="description" content="Nội Thất Gỗ Nhựa Ladiki – Thi công trần nhựa, trần thạch cao, ốp tường, sàn nhựa, sàn gỗ. Báo giá nhanh – Thi công chuyên nghiệp.">
-<meta name="keywords" content="trần nhựa, trần thạch cao, ốp tường nhựa, sàn nhựa, sàn gỗ, nội thất ladiki">
+<title>Showroom Nội Thất Gỗ Nhựa Ladiki</title>
 
 <style>
-:root {
+:root{
   --main:#2e7d32;
-  --dark:#1b1b1b;
-  --light:#f5f5f5;
+  --dark:#1c1c1c;
+  --light:#f4f4f4;
 }
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
-body{background:#fff;color:#333;line-height:1.6}
+*{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{margin:0;background:#fff;color:#333}
 
 /* HEADER */
 header{
@@ -25,212 +22,195 @@ header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  position:sticky;
-  top:0;
-  z-index:1000;
 }
 header h1{font-size:22px}
-header a{color:#fff;text-decoration:none;margin-left:15px}
+header nav a{color:#fff;margin-left:15px;text-decoration:none}
 
 /* HERO */
 .hero{
-  background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-  url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
-  color:#fff;
-  padding:80px 20px;
+  padding:60px 20px;
   text-align:center;
+  background:#eee;
 }
-.hero h2{font-size:36px;margin-bottom:15px}
+.hero h2{font-size:36px}
 .hero p{font-size:18px}
-.hero button{
-  margin-top:25px;
-  padding:15px 30px;
-  font-size:16px;
-  background:var(--main);
-  color:#fff;
-  border:none;
-  cursor:pointer;
-  border-radius:5px;
+
+/* SHOWROOM */
+.showroom{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  padding:40px;
+}
+@media(max-width:768px){
+  .showroom{grid-template-columns:1fr}
 }
 
-/* FILTER */
-.filter{
-  padding:20px;
-  text-align:center;
-  background:var(--light);
+/* PREVIEW */
+.preview{
+  border:1px solid #ddd;
+  border-radius:10px;
+  overflow:hidden;
 }
-.filter button{
+.preview img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  transition:.3s;
+}
+
+/* CONTROLS */
+.controls h3{margin-bottom:10px}
+.group{margin-bottom:20px}
+.group button{
   margin:5px;
-  padding:10px 20px;
+  padding:10px 15px;
   border:1px solid var(--main);
   background:#fff;
   cursor:pointer;
   border-radius:20px;
 }
-.filter button.active,
-.filter button:hover{
+.group button.active,
+.group button:hover{
   background:var(--main);
   color:#fff;
 }
 
-/* PRODUCTS */
-.products{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
-  padding:30px;
-}
-.card{
-  border:1px solid #ddd;
-  border-radius:8px;
-  overflow:hidden;
-  background:#fff;
-}
-.card img{
-  width:100%;
-  height:180px;
-  object-fit:cover;
-}
-.card .content{
-  padding:15px;
-}
-.card h3{margin-bottom:10px}
-.card p{font-size:14px}
-.card a{
-  display:block;
-  margin-top:10px;
+/* CTA */
+.cta{
   text-align:center;
-  padding:10px;
+  margin:40px 0;
+}
+.cta a{
+  display:inline-block;
+  padding:15px 30px;
   background:var(--main);
   color:#fff;
   text-decoration:none;
-  border-radius:5px;
+  border-radius:30px;
+  font-size:18px;
 }
 
-/* INFO */
-.info{
-  padding:40px 20px;
-  background:var(--light);
+/* FIXED CTA */
+.fixed{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
 }
-.info h2{text-align:center;margin-bottom:20px}
-.info p{text-align:center;max-width:800px;margin:auto}
-
-/* MAP */
-.map{
-  margin:30px 0;
+.fixed a{
+  padding:12px 18px;
+  border-radius:30px;
+  color:#fff;
+  text-decoration:none;
+  text-align:center;
 }
-iframe{width:100%;height:350;border:0}
+.fixed .call{background:#e53935}
+.fixed .zalo{background:#25d366}
 
 /* FOOTER */
 footer{
   background:var(--dark);
   color:#fff;
-  padding:25px;
   text-align:center;
+  padding:20px;
 }
-
-/* FIXED CTA */
-.fixed-cta{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-.fixed-cta a{
-  background:#25d366;
-  color:#fff;
-  padding:12px 18px;
-  border-radius:30px;
-  text-decoration:none;
-  text-align:center;
-}
-.fixed-cta a.call{background:#e53935}
 </style>
 </head>
 
 <body>
 
 <header>
-  <h1>LADIKI</h1>
+  <h1>LADIKI SHOWROOM</h1>
   <nav>
-    <a href="#sanpham">Sản phẩm</a>
-    <a href="#lienhe">Liên hệ</a>
+    <a href="#showroom">Showroom</a>
+    <a href="#contact">Liên hệ</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h2>Nội Thất Gỗ Nhựa Ladiki</h2>
-  <p>Trần – Ốp Tường – Sàn | Thi công trọn gói – Bảo hành dài hạn</p>
-  <button onclick="window.location='#lienhe'">Nhận báo giá ngay</button>
+  <h2>Tự chọn vật liệu – Xem ngay không gian nhà bạn</h2>
+  <p>Trải nghiệm như showroom thật</p>
 </section>
 
-<section class="filter">
-  <button class="active" onclick="filterItems('all')">Tất cả</button>
-  <button onclick="filterItems('tran')">Trần</button>
-  <button onclick="filterItems('op')">Ốp tường</button>
-  <button onclick="filterItems('san')">Sàn</button>
+<section class="showroom" id="showroom">
+
+  <!-- PREVIEW -->
+  <div class="preview">
+    <img id="previewImg" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+  </div>
+
+  <!-- CONTROLS -->
+  <div class="controls">
+
+    <div class="group">
+      <h3>Chọn khu vực</h3>
+      <button onclick="setArea('tran')" class="active">Trần</button>
+      <button onclick="setArea('op')">Ốp tường</button>
+      <button onclick="setArea('san')">Sàn</button>
+    </div>
+
+    <div class="group">
+      <h3>Chọn vật liệu / màu</h3>
+      <button onclick="setMaterial('wood')">Vân gỗ</button>
+      <button onclick="setMaterial('white')">Trắng</button>
+      <button onclick="setMaterial('dark')">Gỗ tối</button>
+    </div>
+
+  </div>
+
 </section>
 
-<section class="products" id="sanpham">
-  <div class="card tran">
-    <img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1">
-    <div class="content">
-      <h3>Trần nhựa cao cấp</h3>
-      <p>Chống ẩm – bền đẹp – thi công nhanh</p>
-      <a href="#lienhe">Báo giá</a>
-    </div>
-  </div>
-
-  <div class="card op">
-    <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed">
-    <div class="content">
-      <h3>Ốp tường gỗ nhựa</h3>
-      <p>Sang trọng – dễ vệ sinh</p>
-      <a href="#lienhe">Báo giá</a>
-    </div>
-  </div>
-
-  <div class="card san">
-    <img src="https://images.unsplash.com/photo-1582582494700-8b04c1b7f30d">
-    <div class="content">
-      <h3>Sàn nhựa – sàn gỗ</h3>
-      <p>Chịu nước – không mối mọt</p>
-      <a href="#lienhe">Báo giá</a>
-    </div>
-  </div>
+<section class="cta">
+  <a href="#contact">📞 Nhận báo giá theo mẫu đã chọn</a>
 </section>
 
-<section class="info" id="lienhe">
+<section id="contact" style="text-align:center;padding:30px">
   <h2>Liên hệ Ladiki</h2>
   <p>
     📞 0382 259 567<br>
-    📍 268B Yên Duyên, Yên Sở, Hoàng Mai, Hà Nội<br>
-    📍 58 Thạnh Mỹ Lợi, Q2, TP.HCM
+    📍 268B Yên Duyên – Hoàng Mai – Hà Nội<br>
+    📍 58 Thạnh Mỹ Lợi – Q2 – TP.HCM
   </p>
 </section>
-
-<div class="map">
-<iframe src="https://www.google.com/maps?q=268B%20Y%C3%AAn%20Duy%C3%AAn%20Ho%C3%A0ng%20Mai&output=embed"></iframe>
-</div>
 
 <footer>
   © 2026 Nội Thất Gỗ Nhựa Ladiki
 </footer>
 
-<div class="fixed-cta">
-  <a class="call" href="tel:0382259567">📞 Gọi ngay</a>
-  <a href="https://zalo.me/0382259567" target="_blank">💬 Zalo</a>
+<div class="fixed">
+  <a class="call" href="tel:0382259567">📞 Gọi</a>
+  <a class="zalo" href="https://zalo.me/0382259567" target="_blank">💬 Zalo</a>
 </div>
 
 <script>
-function filterItems(type){
-  document.querySelectorAll('.filter button').forEach(b=>b.classList.remove('active'))
+let area='tran'
+function setArea(a){
+  area=a
+  document.querySelectorAll('.group button').forEach(b=>b.classList.remove('active'))
   event.target.classList.add('active')
-  document.querySelectorAll('.card').forEach(item=>{
-    item.style.display = (type==='all'||item.classList.contains(type))?'block':'none'
-  })
+}
+
+function setMaterial(type){
+  let img=''
+  if(area==='tran'){
+    if(type==='wood') img='https://images.unsplash.com/photo-1600585152915-d208bec867a1'
+    if(type==='white') img='https://images.unsplash.com/photo-1582582494700-8b04c1b7f30d'
+    if(type==='dark') img='https://images.unsplash.com/photo-1615874959474-d609969a20ed'
+  }
+  if(area==='op'){
+    if(type==='wood') img='https://images.unsplash.com/photo-1615874959474-d609969a20ed'
+    if(type==='white') img='https://images.unsplash.com/photo-1600585154340-be6161a56a0c'
+    if(type==='dark') img='https://images.unsplash.com/photo-1600585152915-d208bec867a1'
+  }
+  if(area==='san'){
+    if(type==='wood') img='https://images.unsplash.com/photo-1582582494700-8b04c1b7f30d'
+    if(type==='white') img='https://images.unsplash.com/photo-1600585154340-be6161a56a0c'
+    if(type==='dark') img='https://images.unsplash.com/photo-1615874959474-d609969a20ed'
+  }
+  document.getElementById('previewImg').src=img
 }
 </script>
 
